@@ -1,12 +1,10 @@
 #include<iostream>
 using namespace std;
 int max_min(int a,int b){
-    if (a>b){
+    if (a>b)
         return a;
-    }
-    else{
+    else
         return b;
-    }
 }
 int main(){
     int a,b;
