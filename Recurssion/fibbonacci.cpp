@@ -1,3 +1,5 @@
+//galat hai
+
 #include<iostream>
 using namespace std;
 int fab(int n){
