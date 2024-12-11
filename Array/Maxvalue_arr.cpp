@@ -1,26 +1,16 @@
-//Decalrae an Array int arr[size]=[2,3,4,5,6]
+//declare an Array int arr[size]=[2,3,4,5,6]
 //Homogenous i.e. having same datatype use index for accessing 
 #include<iostream> 
 using namespace std;
 
 int main(){
-    int arr[5];
-    int n;
-    cout<<"Enter Size of Arr: "<<endl;
-    cin>>n;
+    int arr[5]={4,5,6,7,8};
+    int n=sizeof(arr)/sizeof(arr[1]);
+    int result=0;
     for(int i=0;i<n;i++){
-        int ele;
-        cout<<"Enter %d Element: ",i;
-        cin>>ele;
-        arr[i]=ele;
-    }
-    int result;
-    for(int i=0;i<n;i++){
-        if(arr[i]>result){
+        if(result<arr[i]){
             result=arr[i];
         }
     }
-    cout<<"Max number is: "<<result;
-    return 0;
+    cout<<"Max value is: "<<result;
 }
-

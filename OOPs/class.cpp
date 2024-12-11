@@ -29,7 +29,8 @@ class Signup{
 
     //Destructor
     ~Signup(){
-        cout<<"Hi, I am Destructor";
+        cout<<"Hi, I delete every thing";
+        //delete ptr; //for deleting piont dma allocated memory by deep copy
     }
 
 
